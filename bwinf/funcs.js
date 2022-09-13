@@ -37,14 +37,12 @@ function getBlocks(sudoku) {
 function checkSudoku(sudoku) {
     let characters = false;
     sudokuByColums = getSudokuByColumns(sudoku);
-    console.log(sudokuByColums);
     sudoku.forEach(row => {
         if (containsDuplicates(row)) {
             characters = true;
         }
         //looks for anything else than digits and returns amount of valid digits in sudoku
         row.forEach(element => {
-            console.log(element);
             if (isNaN(element) || element > 9) {
                 if (element !== 0) {
                     characters = true;
