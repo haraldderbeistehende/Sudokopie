@@ -1,0 +1,58 @@
+.sudokuinput {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.sudoku {
+    margin: 30px;
+}
+#sudokus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #fff;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+   /* background-image: linear-gradient(-50deg, #ee7752, #ea5991, #23a6d5, #23d5ab);*/
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+    background-attachment: fixed;
+}
+#compare {
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 550;
+    border-radius: 8px;
+    padding: 16px 27px;
+    border: none;
+    /*https://copy-paste-css.com/*/
+    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+    color: #fff;
+    margin: 30px;
+}
+.sub {
+    text-align: center;
+}
+td:nth-child(3n){
+    padding-right: 5px;
+}
+tr:nth-child(3n) td{
+    padding-bottom: 5px;
+}
+td{
+    padding: 0.5px;
+}
+#result{
+    font-size: 30px;
+    color: #fff;
+    margin: 20px 7% 0 7%;
+}
