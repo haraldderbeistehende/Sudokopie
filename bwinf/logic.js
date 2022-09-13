@@ -11,27 +11,21 @@ function innerColumnPermutation(sudoku, columnat) {
             i++;
         }
     }
-    console.log(newsudoku);
     return newsudoku;
 }
 function blockColumnPermutation(sudoku, blockColumnAt) {
     sudoku = getBlocks(sudoku);
-    console.log(sudoku);
     let newsudoku = new Array();
     for (let i = 0; i < 9; i++) {
         if (blockColumnAt == 0) {
-            console.log("made it here (1)");
             if (i % 3 === 1) {
                 newsudoku.push(sudoku[i - 1]);
-                console.log("made it here (2)");
             }
             if (i % 3 === 2) {
                 newsudoku.push(sudoku[i]);
-                console.log("made it here (2)");
             }
             if (i % 3 === 0) {
                 newsudoku.push(sudoku[i + 1]);
-                console.log("made it here (2)");
             }
         }
         if (blockColumnAt == 1) {
@@ -89,6 +83,5 @@ function rotate90(sudoku) {
         }
         newsudoku.push(newrow);
     }
-    console.log(newsudoku);
     return newsudoku;
 }
