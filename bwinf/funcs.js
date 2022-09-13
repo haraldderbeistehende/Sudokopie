@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let toappend = '<tr>';
             toappendfinal += toappend;
             for (let k = 1; k < 10; k++) {
-                toappend = '<td><input type="text"  id="' + j + '-' + i + '-' + k + '" class="sudokuinput" ></td>';
+                toappend = '<td><input type="text"  id="' + j + '-' + i + '-' + k + '" class="sudokuinput" maxlength="1"></td>';
                 toappendfinal += toappend;
             }
             toappend = '</tr>';
