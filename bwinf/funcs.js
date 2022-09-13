@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 //takes a 2-dimensional array of rows and converts it to an array of 3x3 blocks
-function getBlocks(sudoku) {
+function geSudokuByBlocks(sudoku) {
     let blocks = new Array();
     for (let j = 0; j < 9; j += 3) {
         for (let x = 0; x < 9; x += 3) {

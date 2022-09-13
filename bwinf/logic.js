@@ -14,7 +14,7 @@ function innerColumnPermutation(sudoku, columnat) {
     return newsudoku;
 }
 function blockColumnPermutation(sudoku, blockColumnAt) {
-    sudoku = getBlocks(sudoku);
+    sudoku = getSudokuByBlocks(sudoku);
     let newsudoku = new Array();
     for (let i = 0; i < 9; i++) {
         if (blockColumnAt == 0) {
@@ -58,7 +58,7 @@ function innerLinePermutation(sudoku, lineat) {
     return newsudoku;
 }
 function blockLinePermutation(sudoku, blockColumnAt) {
-    sudoku = getBlocks(sudoku);
+    sudoku = getSudokuByBlocks(sudoku);
     console.log(sudoku);
     let newsudoku;
     line1 = sudoku.slice(0, 3);
