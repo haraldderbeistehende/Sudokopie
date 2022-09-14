@@ -59,10 +59,8 @@ function innerLinePermutation(sudoku, lineat) {
 }
 function blockLinePermutation(sudoku, blockColumnAt) {
     sudoku = getSudokuByBlocks(sudoku);
-    console.log(sudoku);
     let newsudoku;
     line1 = sudoku.slice(0, 3);
-    console.log(line1);
     line2 = sudoku.slice(3, 6);
     line3 = sudoku.slice(6, 9);
     if(blockColumnAt == 0){
